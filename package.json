@@ -1,0 +1,22 @@
+{
+  "name": "get-inner-html",
+  "version": "1.0.0",
+  "description": "Demonstration for getInnerHTML",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thescientist13/get-inner-html.git"
+  },
+  "keywords": [
+    "Web Components",
+    "Declarative Shadow DOM"
+  ],
+  "author": "Owen Buckley <owen@thegreenhouse.io>",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx live-server ./src"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

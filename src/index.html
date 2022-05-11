@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Demonstrate getInnerHTML</title>
+
+    <script type="module">
+      import { Header } from './components/header.js';
+
+      const element = new Header();
+
+      element.connectedCallback();
+
+      console.log('getInnerHTML (true)', element.getInnerHTML({ includeShadowRoots: true }));
+      console.log('getInnerHTML (false)', element.getInnerHTML({ includeShadowRoots: false }));
+    </script>
+  </head>
+  
+  <body>
+    <wcc-header></wcc-header>
+  </body>
+
+</html>
