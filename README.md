@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7b65545b-431a-49fb-aa46-8ff5bbcb58b4/deploy-status)](https://app.netlify.com/sites/unique-bombolone-b3ee26/deploys)
+
 # get-inner-html
 
 Example for demonstrating and understanding `getInnerHTML`, used in Declarative Shadow DOM.
@@ -110,4 +112,17 @@ B) Just no `<template>` (e.g. only light DOM)
     <ul>
   </nav>
 </header>
+```
+
+----
+
+It seems per testing in Chrome, `true` outputs just the first pass, and `false` returns nothing?
+```
+getInnerHTML (true) <template shadowroot="open">
+  <header>
+    <h1>Welcome to my website</h1>
+    <wcc-navigation></wcc-navigation>
+  </header>
+</template>
+(index):15 getInnerHTML (false) 
 ```
